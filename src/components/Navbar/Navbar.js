@@ -12,11 +12,11 @@ const Navbar = () => {
         { id: 5, name: 'Contact', link: '/cantact'},
     ]
     return (
-            <nav className='bg-indigo-200'>
-                <div onClick={()=>setOpen(!open)} className='w-6 h-6 md:hidden'>
+            <nav className='bg-purple-400'>
+                <div onClick={()=>setOpen(!open)} className='w-8 h-8 md:hidden'>
                     {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
                 </div>
-                <ul className={`md:flex justify-center absolute md:static bg-indigo-200 w-full duration-500 ease-in ${open ? 'top-6':'top-[-120px]'}`}>
+                <ul className={`md:flex justify-center absolute p-5 md:static bg-purple-400	 w-full duration-500 ease-in ${open ? 'top-6':'top-[-160px]'}`}>
                     {
                         routes.map(route=><Link
                         key={route.id}
